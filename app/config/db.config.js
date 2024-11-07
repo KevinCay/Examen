@@ -25,14 +25,6 @@ const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
  
-//tabla 
-db.Ejemplo = require('../models/ejemplo.model.js')(sequelize, Sequelize);
-//tabla usuario
-db.Usuario = require('../models/usuario.model.js')(sequelize, Sequelize);
-//tabla proyectos
-db.Proyecto = require('../models/proyecto.model.js')(sequelize, Sequelize);
-//tabla tares
-db.Tarea = require('../models/tarea.model.js')(sequelize, Sequelize);
-
+de.Juego = require('../models/juegos.model.js')(sequelize, Sequelize);
 
 module.exports = db;
