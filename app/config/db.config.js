@@ -10,7 +10,7 @@ const sequelize = new Sequelize(env.database, env.username, env.password, {
       rejectUnauthorized: false
     }
   },
-  //operatorsAliases: false,
+
  
   pool: {
     max: env.max,

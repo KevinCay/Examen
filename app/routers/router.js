@@ -1,10 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
-// Importar el controlador de juegos
 const juegos = require('../controllers/juego.controller.js');
 
-// Rutas para la tabla juegos
+
 router.post('/api/juegos/create', juegos.create);
 router.get('/api/juegos/all', juegos.retrieveAllJuegos);
 router.get('/api/juegos/buscar/:nombre_juego', juegos.getJuegoByName);
